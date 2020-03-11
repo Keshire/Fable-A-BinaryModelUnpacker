@@ -84,7 +84,7 @@ namespace FableAnniversaryHelperUnpack
                 for (var i = 1; i < NumberSubMeshes; i++) { }
 
 
-                string newfile = Path.ChangeExtension(args[0], null) + ".unpacked.BIN";
+                string newfile = Path.ChangeExtension(args[0], null) + ".unpacked.bbm";
                 (new FileInfo(newfile)).Directory.Create();
                 using (BinaryWriter b = new BinaryWriter(File.Open(newfile, FileMode.Create)))
                 {
